@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+    <style>
+        .container-two .spilt{
+            width: 50%;
+        }
+        .spilt img{
+            width: 100%;
+        }
+        @media screen and(max-width:576px) {
+            .container-two{
+                flex-direction: column;
+            }
+            
+        }
+        body{
+            border: 1px solid red;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 10vw;
+        }
+        .tiger img{
+            width: 100%;
+
+        }
+        .container-two{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My Responsive website</h1>
+    </section>
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/qmTrmidGxtYqoT4zjoxPcV.jpg" alt="">
+    </section>
+    <section>
+        <h2>two parts</h2>
+        <div class="container-two">
+            <div class="spilt">
+<img src="images/qmTrmidGxtYqoT4zjoxPcV.jpg" alt="">
+
+</div>
+            <div class="spilt">
+                <img src="images/food.jpg">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
